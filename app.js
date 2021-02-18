@@ -20,7 +20,8 @@ app.post("/",function(req,res){
             console.log(weather_data);
             var temp=weather_data.main.temp;
             res.write("<h1> THE TEMPERATUR IN "+city+" is "+temp+" KELVIN</h1>");
-            res.write("<h1> how's YOU !!</h1>");
+            res.write("<h2> THE VISIBILITY IS "+weather_data.visibility+ " </h2>");
+            
             res.send()
 
         })
